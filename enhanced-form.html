@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Event Registration</h1>
+    <p>Register below to attend our upcoming tech conference.</p>
+  </header>
+
+  <main>
+ <h2>About the Event</h2>
+    <section class="list">
+      <ul>
+        <li>Date: October 5, 2025</li>
+        <li>Location: Tech Convention Center</li>
+        <li>Topics: AI, Web Development, Cybersecurity</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Event Schedule</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Session</th>
+            <th>Speaker</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09:00 AM</td>
+            <td>Opening Keynote</td>
+            <td>Dr. Smith</td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td>AI in 2025</td>
+            <td>Jane Doe</td>
+          </tr>
+          <tr>
+            <td>02:00 PM</td>
+            <td>Cybersecurity Panel</td>
+            <td>Multiple Speakers</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Event Preview</h2>
+      <video controls width="320">
+        <source src="event-preview.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="meal">Meal Preference:</label>
+          <select id="meal" name="meal" required>
+            <option value="">--Select--</option>
+            <option value="veg">Vegetarian</option>
+            <option value="nonveg">Non-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+          </select><br><br>
+
+          <p>Workshops:</p>
+          <label><input type="checkbox" name="workshop" value="web"> Web Development</label><br>
+          <label><input type="checkbox" name="workshop" value="ai"> Artificial Intelligence</label><br>
+          <label><input type="checkbox" name="workshop" value="cyber"> Cybersecurity</label><br><br>
+
+          <label>Attendance Type:</label><br>
+          <label><input type="radio" name="attendance" value="in-person" required> In-Person</label><br>
+          <label><input type="radio" name="attendance" value="virtual" required> Virtual</label><br><br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Setup</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required minlength="6"><br><br>
+
+          <label for="referral">Referral Code:</label>
+          <input type="text" id="referral" name="referral" readonly value="INVITE2025"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Comments</legend>
+          <label for="comments">Any questions or comments?</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Let us know..." maxlength="300"></textarea>
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Reset Form</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>2025 Tech Conference</p>
+  </footer>
+
+</body>
+
+</html>

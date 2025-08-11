@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+}
+
+table {
+   margin: 0 auto;
+}
+
+.list{
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h1, h2 {
+    color: blueviolet;
+}
+
+fieldset:first-of-type {
+  border: 2px solid rgb(214, 21, 214);
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #e8e1eb;
+}
